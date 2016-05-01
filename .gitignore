@@ -1,0 +1,11 @@
+*.swp
+.*.swp
+/.sass-cache
+.DS_Store
+.bundle/
+.sass-cache/
+*.lock
+tmp/
+node_modules*
+~*.xlsm
+.vagrant
