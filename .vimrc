@@ -93,7 +93,7 @@ set noincsearch
 "シンタックスハイライトを有効にする
 if has("syntax")
 	syntax on
-	colorscheme elflord
+	colorscheme desert
 endif
 "行番号を表示しない
 "set nonumber
