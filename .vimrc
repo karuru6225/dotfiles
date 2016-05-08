@@ -155,53 +155,53 @@ syntax on
 set tabstop=2
 set expandtab
 
-"dein Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
-endif
-
-" Required:
-set runtimepath^=~/.vim/dein.vim/repos/github.com/Shougo/dein.vim
-
-" Required:
-call dein#begin(expand('~/.vim/dein.vim'))
-
-" Let dein manage dein
-" Required:
-call dein#add('Shougo/dein.vim')
-
-" Add or remove your plugins here:
-" call dein#add('Shougo/neosnippet.vim')
-" call dein#add('Shougo/neosnippet-snippets')
-
-" You can specify revision/branch/tag.
-call dein#add('Shougo/vimproc.vim', {
-    \ 'build': {
-    \     'windows': 'tools\\update-dll-mingw',
-    \     'cygwin': 'make -f make_cygwin.mak',
-    \     'mac': 'make -f make_mac.mak',
-    \     'linux': 'make',
-    \     'unix': 'gmake',
-    \    },
-    \ })
-call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
-call dein#add('Shougo/neocomplcache')
-call dein#add('leafgarland/typescript-vim')
-
-" Required:
-call dein#end()
-
-" Required:
-filetype plugin indent on
-
-if dein#check_install(['vimproc'])
-  call dein#install(['vimproc'])
-endif
-" If you want to install not installed plugins on startup.
-if dein#check_install()
-  call dein#install()
-endif
-
-"End dein Scripts-------------------------
+""dein Scripts-----------------------------
+"if &compatible
+"  set nocompatible               " Be iMproved
+"endif
+"
+"" Required:
+"set runtimepath^=~/.vim/dein.vim/repos/github.com/Shougo/dein.vim
+"
+"" Required:
+"call dein#begin(expand('~/.vim/dein.vim'))
+"
+"" Let dein manage dein
+"" Required:
+"call dein#add('Shougo/dein.vim')
+"
+"" Add or remove your plugins here:
+"" call dein#add('Shougo/neosnippet.vim')
+"" call dein#add('Shougo/neosnippet-snippets')
+"
+"" You can specify revision/branch/tag.
+"call dein#add('Shougo/vimproc.vim', {
+"    \ 'build': {
+"    \     'windows': 'tools\\update-dll-mingw',
+"    \     'cygwin': 'make -f make_cygwin.mak',
+"    \     'mac': 'make -f make_mac.mak',
+"    \     'linux': 'make',
+"    \     'unix': 'gmake',
+"    \    },
+"    \ })
+"call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+"call dein#add('Shougo/neocomplcache')
+"call dein#add('leafgarland/typescript-vim')
+"
+"" Required:
+"call dein#end()
+"
+"" Required:
+"filetype plugin indent on
+"
+"if dein#check_install(['vimproc'])
+"  call dein#install(['vimproc'])
+"endif
+"" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+"
+""End dein Scripts-------------------------
 let g:neocomplcache_enable_at_startup = 1
 
