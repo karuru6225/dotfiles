@@ -74,8 +74,10 @@ On_IWhite='\e[0;107m'   # White
 
 alias ls='ls -G'
 alias rm='rm -i -v'
+alias ta='tmux has-session && tmux attach  || tmux'
+alias gb="git branch 2> /dev/null | grep \* | awk '{ print \$2 }' | tr -d '\n' | sed 's/\([0-9a-zA-Z]\+\)/(\1)/g'"
 
-PS1="${BCyan}\u${BWhite}@${Cyan}\h${BWhite} (\$(date \"+%Y-%m-%dT%H:%M:%S\")) :${BCyan}\w${White}\n$ "
+PS1="${BCyan}\u${BWhite}@${Cyan}\h${BWhite} (\$(date \"+%Y%m%d%H%M%S\"))\$(gb):${BCyan}\w${White}\n$ "
 if [[ -n "$PS1" ]]; then
         cd() {
                 command cd "$@"
@@ -86,7 +88,5 @@ if [[ -n "$PS1" ]]; then
                 return $s
         }
 fi
-
-alias ta='tmux has-session && tmux attach  || tmux'
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
