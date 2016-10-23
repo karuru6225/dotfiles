@@ -155,8 +155,8 @@ syntax on
 set tabstop=2
 set expandtab
 
-set undodir=/var/run/vim/undofiles
-set backupdir=/var/run/vim/backupfiles
+"set undodir=/var/run/vim/undofiles
+"set backupdir=/var/run/vim/backupfiles
 
 ""dein Scripts-----------------------------
 "if &compatible
